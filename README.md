@@ -8,18 +8,18 @@ This project aims to retrofit them with off-the-shelf parts to extend their life
 Here is an example parts list that may be used for this conversion. This assumes that you repurpose the
 old printer's ATX power supply, chamber heaters, chamber thermistor, and CoreXY mechanics.
 
-| Item              | URL                                   | Price | Quantity | Total Cost |
-|-------------------|---------------------------------------|-------|----------|------------|
-| Chimera hotend    | https://www.amazon.com/dp/B08BKMM1R7/ | $20   | 1        | $20        |
-| Extruder          | https://www.amazon.com/dp/B07WHYBVJ5/ | $10   | 2        | $20        |
-| Control board     | https://www.amazon.com/dp/B08PCX6TM7/ | $42   | 1        | $42        |
-| Endstops          | https://www.amazon.com/dp/B07PCN6T6F/ | $11   | 1        | $11        |
-| PTFE tubing       | https://www.amazon.com/dp/B07XYJZ17Z/ | $15   | 1        | $15        |
-| Stepper motors    | https://www.amazon.com/dp/B07KW7F3P9/ | $43   | 1        | $43        |
-| MOSFETs           | https://www.amazon.com/dp/B0CCP24G5J/ | $9    | 1        | $9         |
-| ESC               | https://www.amazon.com/dp/B0863HZN9L/ | $13   | 1        | $13        |
-| Display           | https://www.amazon.com/dp/B08HLSCHVL/ | $12   | 1        | $12        |
-| **Total**         |                                       |       |          | **$185**   |
+| Item                           | URL                                   | Price | Quantity | Total Cost |
+|--------------------------------|---------------------------------------|-------|----------|------------|
+| Knockoff E3D Chimera           | https://www.amazon.com/dp/B08BKMM1R7/ | $20   | 1        | $20        |
+| Extruder (Ender 3 bowden)      | https://www.amazon.com/dp/B07WHYBVJ5/ | $10   | 2        | $20        |
+| Control board (MKS Eagle)      | https://www.amazon.com/dp/B08PCX6TM7/ | $42   | 1        | $42        |
+| Endstops (enough for two)      | https://www.amazon.com/dp/B07PCN6T6F/ | $11   | 1        | $11        |
+| PTFE tubing (or get Capricorn) | https://www.amazon.com/dp/B07XYJZ17Z/ | $15   | 1        | $15        |
+| Nema 17 stepper motors         | https://www.amazon.com/dp/B07KW7F3P9/ | $43   | 1        | $43        |
+| 25A MOSFETs                    | https://www.amazon.com/dp/B0CCP24G5J/ | $9    | 1        | $9         |
+| 12V Brushless ESC for blower   | https://www.amazon.com/dp/B0863HZN9L/ | $13   | 1        | $13        |
+| Display with SD card reader    | https://www.amazon.com/dp/B08HLSCHVL/ | $12   | 1        | $12        |
+| **Total**                      |                                       |       |          | **$185**   |
 
 ## Instructions
 
