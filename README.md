@@ -24,11 +24,15 @@ old printer's ATX power supply, chamber heaters, chamber thermistor, and CoreXY 
 
 ## Instructions
 
-### Build Marlin
+### 3D Printing Parts
+
+Currently in the `cad/` subdirectory, I have included a design for an E3D V6 hotend mount. I will update this to add the Chimera mount when I have tested it. In the meantime, customize this design for your hotend.
+
+### Building Marlin
 
 Copy the configuration files from the *Marlin* directory into a Marlin 2.0 LTS project. Customize the `MOTHERBOARD`, then build and upload Marlin to that control board.
 
-### PrusaSlicer
+### Configuring PrusaSlicer
 
 I selected PrusaSlicer for its robustness and ease of customization, however, I believe that derivatives such as SuperSlicer or OrcaSlicer will also work.
 Or, if you prefer Cura, as I do for my other machines, the configuration should be easy enough to replicate.
