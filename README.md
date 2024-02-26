@@ -19,8 +19,7 @@ old printer's ATX power supply, chamber heaters, chamber thermistor, and CoreXY 
 | MOSFETs           | https://www.amazon.com/dp/B0CCP24G5J/ | $9    | 1        | $9         |
 | ESC               | https://www.amazon.com/dp/B0863HZN9L/ | $13   | 1        | $13        |
 | Display           | https://www.amazon.com/dp/B08HLSCHVL/ | $12   | 1        | $12        |
-| SD card extension | https://www.amazon.com/dp/B07H31Y518/ | $11   | 1        | $11        |
-| **Total**         |                                       |       |          | **$196**   |
+| **Total**         |                                       |       |          | **$185**   |
 
 ## Instructions
 
