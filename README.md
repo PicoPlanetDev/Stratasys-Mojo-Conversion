@@ -6,26 +6,26 @@ This project aims to retrofit them with off-the-shelf parts to extend their life
 ## Parts
 
 Here is an example parts list that may be used for this conversion. This assumes that you repurpose the
-old printer's ATX power supply, chamber heaters, chamber thermistor, and CoreXY mechanics.
+old printer's ATX power supply and CoreXY mechanics. Minmimal irreversible changes are made to the machine,
+although that doesn't really matter at this point!
 
-| Item                           | URL                                   | Price | Quantity | Total Cost |
-|--------------------------------|---------------------------------------|-------|----------|------------|
-| Knockoff E3D Chimera           | https://www.amazon.com/dp/B08BKMM1R7/ | $20   | 1        | $20        |
-| Extruder (Ender 3 bowden)      | https://www.amazon.com/dp/B07WHYBVJ5/ | $10   | 2        | $20        |
-| Control board (MKS Eagle)      | https://www.amazon.com/dp/B08PCX6TM7/ | $42   | 1        | $42        |
-| Endstops (enough for two)      | https://www.amazon.com/dp/B07PCN6T6F/ | $11   | 1        | $11        |
-| PTFE tubing (or get Capricorn) | https://www.amazon.com/dp/B07XYJZ17Z/ | $15   | 1        | $15        |
-| Nema 17 stepper motors         | https://www.amazon.com/dp/B07KW7F3P9/ | $43   | 1        | $43        |
-| 25A MOSFETs                    | https://www.amazon.com/dp/B0CCP24G5J/ | $9    | 1        | $9         |
-| 12V Brushless ESC for blower   | https://www.amazon.com/dp/B0863HZN9L/ | $13   | 1        | $13        |
-| Display with SD card reader    | https://www.amazon.com/dp/B08HLSCHVL/ | $12   | 1        | $12        |
-| **Total**                      |                                       |       |          | **$185**   |
+|         **Item**        |                **URL**                | **Price** | **Quantity** | **Total Cost** |
+|:-----------------------:|:-------------------------------------:|:---------:|:------------:|:--------------:|
+| Chimera hotend          | https://www.amazon.com/dp/B08BKMM1R7/ | $20       | 1            | $20            |
+| Extruder                | https://www.amazon.com/dp/B0BZD8JMPR/ | $9        | 2            | $18            |
+| Control board           | https://www.amazon.com/dp/B08PCX6TM7/ | $42       | 1            | $42            |
+| Endstops                | https://www.amazon.com/dp/B07PCN6T6F/ | $11       | 1            | $11            |
+| PTFE tubing             | https://www.amazon.com/dp/B01CUPV90M/ | $8        | 1            | $8             |
+| Stepper motors          | https://www.amazon.com/dp/B0817TS61F/ | $38       | 1            | $38            |
+| LCD display             | https://www.amazon.com/dp/B08HLSCHVL/ | $12       | 1            | $12            |
+| GT2 timing belt pulleys | https://www.amazon.com/dp/B07BT6N12L  | $8        | 1            | $8             |
+| 4010 fan                | https://www.amazon.com/dp/B0B1N6NSGM/ | $9        | 1            | $9             |
+| **Total**               |                                       |           |              | **$166**           |
 
-## Instructions
-
-### 3D Printing Parts
-
+### 3D Printed Parts
 Currently in the `cad/` subdirectory, I have included a design for an E3D V6 hotend mount. I will update this to add the Chimera mount when I have tested it. In the meantime, customize this design for your hotend.
+
+## Setup
 
 ### Building Marlin
 
@@ -50,12 +50,7 @@ Or, if you prefer Cura, as I do for my other machines, the configuration should 
 8. Load the `Mojo Logo.png` file in this repository as the bed texture.
 9. Load the `Accurate Mojo Build Plate.stl` file in this repository as the bed model.
 
-## Notes
+## Instructions
 
-As I haven't yet found an easy way to control the chamber temperature from the LCD in Marlin, and the Mojo lacks a heated
-build plate, this configuration currently controls the chamber through the bed, and reads the chamber temperature into the bed
-thermistor.
-Additionally, the brushless fan used to circulate the chamber air will likely be controlled by one of the print cooling fan headers.
-
-**Therefore, please ensure** that the bed is set to a reasonable temperature for all fo your filament profiles **and** that
-your part cooling fan speed is always set to 100% to ensure that this air continues to circulate.
+I created a guide with instructions for a novice user to prepare a model for printing on one of these converted machines.
+That document is available here: [Stratasys Mojo Instructions](https://docs.google.com/document/d/1dcEKFhcxA-QaMBZmRmVCBlgQjbNByx9ydnzFRXKonwo/edit?usp=sharing)
