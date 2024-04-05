@@ -60,3 +60,9 @@ Or, if you prefer Cura, as I do for my other machines, the configuration should 
 
 I created a guide with instructions for a novice user to prepare a model for printing on one of these converted machines.
 That document is available here: [Stratasys Mojo Instructions](https://docs.google.com/document/d/1dcEKFhcxA-QaMBZmRmVCBlgQjbNByx9ydnzFRXKonwo/edit?usp=sharing)
+
+## TODO
+
+- [ ] Update to 2.1-bugfix
+- [ ] Implement M16 in print profile to ensure that the right profile (dual vs single extruder) was used
+- [ ] Figure out feasibility of ATX power supply enable / disable and standby power 
