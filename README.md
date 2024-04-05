@@ -33,9 +33,13 @@ Currently in the `cad/` subdirectory, I have included a design for an E3D V6 hot
 
 ## Setup
 
-### Building Marlin
+### Firmware
 
-Copy the configuration files from the *Marlin* directory into a Marlin 2.0 LTS project. Customize the `MOTHERBOARD`, then build and upload Marlin to that control board.
+I tested the single extruder system on old hardware I had available. Therefore, the configuration is for a mega2560 based MKS Base board.
+This configuration is for Marlin 2.0.9.7 LTS.
+
+I'm using the MKS Eagle (basically Robin Nano with builtin drivers) for the production version, so the config files and binary reflect that.
+This is based on Marlin 2.1-bugfix on 4/5/2024.
 
 ### Configuring PrusaSlicer
 
@@ -65,4 +69,9 @@ That document is available here: [Stratasys Mojo Instructions](https://docs.goog
 
 - [ ] Update to 2.1-bugfix
 - [ ] Implement M16 in print profile to ensure that the right profile (dual vs single extruder) was used
-- [ ] Figure out feasibility of ATX power supply enable / disable and standby power 
+- [ ] Figure out feasibility of ATX power supply enable / disable and standby power
+- [ ] Consider MPC temperature instead of PID
+- [ ] Consider S-Curve acceleration
+- [ ] Consider nozzle clean
+- [ ] Enable linear advance
+- [ ] Consider sensorless homing
