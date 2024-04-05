@@ -3,6 +3,12 @@
 Stratasys has ended support for their Mojo 3D printers, and you can no longer purchase parts or filament for them.
 This project aims to retrofit them with off-the-shelf parts to extend their lifespan.
 
+## Notice
+
+I have identified an issue with the Marlin 2.0.9.7 LTS firmware that causes incompatibility with the LCD display,
+and I probably shouldn't have been using LTS anyway. As such, in the coming days, I'll switch the firmware over to the 
+2.1-bugfix branch, and hopefully, in the slightly further future, to 2.1.3.
+
 ## Parts
 
 Here is an example parts list that may be used for this conversion. This assumes that you repurpose the
