@@ -6,7 +6,7 @@ This project aims to retrofit them with off-the-shelf parts to extend their life
 ## Notice
 
 I have identified an issue with the Marlin 2.0.9.7 LTS firmware that causes incompatibility with the LCD display,
-and I probably shouldn't have been using LTS anyway. As such, in the coming days, I'll switch the firmware over to the 
+and I probably shouldn't have been using LTS anyway. As such, in the coming days, I'll switch the firmware over to the
 2.1-bugfix branch, and hopefully, in the slightly further future, to 2.1.3.
 
 ## Parts
@@ -17,18 +17,19 @@ although that doesn't really matter at this point!
 
 |         **Item**        |                **URL**                | **Price** | **Quantity** | **Total Cost** |
 |:-----------------------:|:-------------------------------------:|:---------:|:------------:|:--------------:|
-| Chimera hotend          | https://www.amazon.com/dp/B08BKMM1R7/ | $20       | 1            | $20            |
-| Extruder                | https://www.amazon.com/dp/B0BZD8JMPR/ | $9        | 2            | $18            |
-| Control board           | https://www.amazon.com/dp/B08PCX6TM7/ | $42       | 1            | $42            |
-| Endstops                | https://www.amazon.com/dp/B07PCN6T6F/ | $11       | 1            | $11            |
-| PTFE tubing             | https://www.amazon.com/dp/B01CUPV90M/ | $8        | 1            | $8             |
-| Stepper motors          | https://www.amazon.com/dp/B0817TS61F/ | $38       | 1            | $38            |
-| LCD display             | https://www.amazon.com/dp/B08HLSCHVL/ | $12       | 1            | $12            |
-| GT2 timing belt pulleys | https://www.amazon.com/dp/B07BT6N12L  | $8        | 1            | $8             |
-| 4010 fan                | https://www.amazon.com/dp/B0B1N6NSGM/ | $9        | 1            | $9             |
+| Chimera hotend          | <https://www.amazon.com/dp/B08BKMM1R7/> | $20       | 1            | $20            |
+| Extruder                | <https://www.amazon.com/dp/B0BZD8JMPR/> | $9        | 2            | $18            |
+| Control board           | <https://www.amazon.com/dp/B08PCX6TM7/> | $42       | 1            | $42            |
+| Endstops                | <https://www.amazon.com/dp/B07PCN6T6F/> | $11       | 1            | $11            |
+| PTFE tubing             | <https://www.amazon.com/dp/B01CUPV90M/> | $8        | 1            | $8             |
+| Stepper motors          | <https://www.amazon.com/dp/B0817TS61F/> | $38       | 1            | $38            |
+| LCD display             | <https://www.amazon.com/dp/B08HLSCHVL/> | $12       | 1            | $12            |
+| GT2 timing belt pulleys | <https://www.amazon.com/dp/B07BT6N12L>  | $8        | 1            | $8             |
+| 4010 fan                | <https://www.amazon.com/dp/B0B1N6NSGM/> | $9        | 1            | $9             |
 | **Total**               |                                       |           |              | **$166**           |
 
 ### 3D Printed Parts
+
 Currently in the `cad/` subdirectory, I have included a design for an E3D V6 hotend mount. I will update this to add the Chimera mount when I have tested it. In the meantime, customize this design for your hotend.
 
 ## Setup
