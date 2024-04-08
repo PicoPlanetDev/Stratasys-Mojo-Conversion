@@ -36,7 +36,16 @@ The dual nozzle version is currently based on Marlin 2.1-bugfix as of 5 April 20
 
 ### Installation
 
+As this was my first time dealing with a 32-bit control board, the process for uploading firmware was initially foreign to me. *Here's the process I found to be best for quick iteration:*
 
+1. Clone or download [makerbase-mks/MKS-EAGLE](https://github.com/makerbase-mks/MKS-EAGLE)
+2. Clone or download this repository (for easy access to the Marlin configuration files)
+3. Download and extract the appropriate version of Marlin from [this page](https://marlinfw.org/meta/download/)
+4. Copy the configuration files from the Marlin folder in this repository, and paste them in the Marlin subfolder that you extracted. You should see in the same directory the folders `lib` and `src` in addition to the file `Marlin.ino` if you're in the right place.
+5. Install [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) using the download link for your platform
+4. Set up Auto Build Marlin according to [these instructions](https://marlinfw.org/docs/basics/auto_build_marlin.html)
+5. Customize the example configuration
+6. Build using the Build button in the Auto Build Marlin window
 
 ## Slicer
 
