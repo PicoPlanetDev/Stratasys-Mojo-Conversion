@@ -46,6 +46,15 @@ As this was my first time dealing with a 32-bit control board, the process for u
 4. Set up Auto Build Marlin according to [these instructions](https://marlinfw.org/docs/basics/auto_build_marlin.html)
 5. Customize the example configuration
 6. Build using the Build button in the Auto Build Marlin window
+7. Find your `mks_eagle.bin` output file. It should be located in `../.pio' folder (one level outside of the Marlin folder)
+8. Copy `mks_eagle.bin` to the `DFU-upload` folder downloaded from the MKS-EAGLE repository. Overwrite the `mks_eagle.bin` that's already there.
+9. Move the control board's power jumper (near the USB Type B port and microSD slot) to USB power
+10. Press and hold the `BOOT0` button on the board, then plug it in to your computer using the included cable. Once it's plugged in, release the button.
+10. Download and run the latest version of [Zadig](https://zadig.akeo.ie/), which will help install necessary USB drivers.
+11. Once Zadig is running, click `Options` then `List All Devices` then select from the top dropdown a device like `STM Bootloader`
+12. For the driver to install (bottom middle-ish of the window, select WinUSB, then install the driver, which surprisingly takes a few minutes.
+13. In the `MKS-EAGLE/DFU-upload` folder, run the `DFU-upload-fiems`
+TODO: Check steps 
 
 ## Slicer
 
