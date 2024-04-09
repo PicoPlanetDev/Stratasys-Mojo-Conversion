@@ -36,16 +36,16 @@ In the `cad/` subdirectory, I have included designs in both Fusion 360 and STEP 
 
 I'd suggest using a drill with the clutch limited to about 5 (attached to an appropriately sized socket head) to remove all of the screws. Probably you'll want a magnetic screw dish as well.
 
-1. Remove the metal backplate after unscrewing all of the screws marked in red in the below image
+1. Remove the metal backplate after unscrewing all of the screws marked in ![red image](https://placehold.co/15x15/fe5252/fe5252.png) **red** in the below image
 ![Back screws to remove](screenshots/back_screws.jpg)
-2. Remove the two side panels after unscrewing all of the screws marked in blue in the above image
-3. Unplug every connector from the original I/O board, including the power cables and all ribbon cables
-4. Unscrew each screw keeping the I/O board in place, then remove it
+1. Remove the two side panels after unscrewing all of the screws marked in ![blue image](https://placehold.co/15x15/00b0ff/00b0ff.png) **blue** in the above image
+2. Unplug every connector from the original I/O board, including the power cables and all ribbon cables
+3. Unscrew each screw keeping the I/O board in place, then remove it
 ![I/O board screws to remove](screenshots/original_board_screws.jpg)
-5. *Carefully* bend the metal tabs previously holding the I/o board in place out of the way. Ideally all should be in a flush position, save for the small bump where they are attached.
-6. Unscrew and remove both filament buckets. There's four obvious screws on the top, but also one hidden one that I had to use a screwdriver plus shaft extension on:
+1. *Carefully* bend the metal tabs previously holding the I/o board in place out of the way. Ideally all should be in a flush position, save for the small bump where they are attached.
+2. Unscrew and remove both filament buckets. There's four obvious screws on the top, but also one hidden one that I had to use a screwdriver plus shaft extension on:
 ![Filament bucket screws to remove](screenshots/filament_bucket_screws.jpg)
-7. Remove the original hotend carrier. This takes some work, and many screws that I don't (yet) have documentation photos for. This is a general guide and it took at least an hour of messing with it the first time I did it.
+1. Remove the original hotend carrier. This takes some work, and many screws that I don't (yet) have documentation photos for. This is a general guide and it took at least an hour of messing with it the first time I did it.
    1. First, try unscrewing the PCB on the back
    2. Remove the belts from their tensioning system and unscrew the back from its slider
    3. Remove the clip holding the front on, and I think you can take out the entire assembly
