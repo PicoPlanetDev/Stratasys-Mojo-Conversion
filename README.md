@@ -28,13 +28,25 @@ I converted two printers at once for $300, a slight cost savings due to higher q
 
 In the `cad/` subdirectory, I have included designs in both Fusion 360 and STEP formats for you to customize and export. STLs and potentially Printables links coming soon!
 
+## Assembly
+
+In lieu of a full assembly guide (right now), I'll just add some notes.
+
+- If you're not using a heated bed, just power the control board off of the power supply's PCIe power
+  - Snip off the last couple of inches of the header
+  - Twist together the three yellow wires, then separately twist together the three black wires
+  - Maybe put a blob of solder on the twists to keep them in place while inserting into the control board's screw terminals
+- When viewing the printer **from the back**, the left motor should be plugged into the **X** connector and the right motor into the **Y** connector
+- You'll need to drill some ~1" holes through the side panels and filament buckets to accomodate a dowel rod for the filament spool
+  - Alternatively, for a no-damage installation, print first one of the filament spool holder designs that uses bearings and rollers to support the filament and allow it to spin freely
+
 ## Firmware
 
 The firmware for the prototype single extruder system is based on Marlin 2.0.9.7 LTS which is not recommended for use with "modern" boards. For that machine, I was reusing an old mega2560 MKS Base v1.4 control board, but I could have used a newer Marlin version, and I'd suggest you update the config to do that.
 
 The dual nozzle version is currently based on Marlin 2.1-bugfix as of 5 April 2024, but I intend to upgrade it to 2.1.3 when that becomes available. I'm using the MKS Eagle (basically Robin Nano with builtin drivers) for the production version, so the config files and binary reflect that.
 
-### Installation
+### Build and Upload
 
 As this was my first time dealing with a 32-bit control board, the process for uploading firmware was initially foreign to me. *Here's the process I found to be best for quick iteration:*
 
@@ -48,13 +60,15 @@ As this was my first time dealing with a 32-bit control board, the process for u
 6. Build using the Build button in the Auto Build Marlin window
 7. Find your `mks_eagle.bin` output file. It should be located in `../.pio' folder (one level outside of the Marlin folder)
 8. Copy `mks_eagle.bin` to the `DFU-upload` folder downloaded from the MKS-EAGLE repository. Overwrite the `mks_eagle.bin` that's already there.
-9. Move the control board's power jumper (near the USB Type B port and microSD slot) to USB power
+9.  Ensure that your control board is entirely unpowered, then move the board's power jumper (near the USB Type B port and microSD slot) to USB power (on)
 10. Press and hold the `BOOT0` button on the board, then plug it in to your computer using the included cable. Once it's plugged in, release the button.
-10. Download and run the latest version of [Zadig](https://zadig.akeo.ie/), which will help install necessary USB drivers.
-11. Once Zadig is running, click `Options` then `List All Devices` then select from the top dropdown a device like `STM Bootloader`
-12. For the driver to install (bottom middle-ish of the window, select WinUSB, then install the driver, which surprisingly takes a few minutes.
-13. In the `MKS-EAGLE/DFU-upload` folder, run the `DFU-upload-fiems`
-TODO: Check steps 
+11. Download and run the latest version of [Zadig](https://zadig.akeo.ie/), which will help install necessary USB drivers.
+12. Once Zadig is running, click `Options` then `List All Devices` then select from the top dropdown a device like `STM Bootloader`
+13. Set the driver in the right-side combobox to WinUSB, and then click `Replace Driver`. This process can surprisingly take a few minutes to complete.
+![Screenshot of Zadig window for driver replacement](screenshots/replace_driver.png)
+14. In the `MKS-EAGLE/DFU-upload` folder, run `DFU-Upload-firmware.bat`
+15. Once flashing is complete, unplug the board and change the power jumper back to off (so no USB power)
+16. Turn on your power supply and test the firmware!
 
 ## Slicer
 
