@@ -36,9 +36,9 @@ In the `cad/` subdirectory, I have included designs in both Fusion 360 and STEP 
 
 I'd suggest using a drill with the clutch limited to about 5 (attached to an appropriately sized socket head) to remove all of the screws. Probably you'll want a magnetic screw dish as well.
 
-1. Remove the metal backplate after unscrewing all of the screws marked in ![red image](https://placehold.co/15x15/fe5252/fe5252.png) **red** in the below image
+1. Remove the metal backplate after unscrewing all of the screws marked in ![red image](https://placehold.co/10x10/fe5252/fe5252.png) **red** in the below image
 ![Back screws to remove](screenshots/back_screws.jpg)
-1. Remove the two side panels after unscrewing all of the screws marked in ![blue image](https://placehold.co/15x15/00b0ff/00b0ff.png) **blue** in the above image
+1. Remove the two side panels after unscrewing all of the screws marked in ![blue image](https://placehold.co/10x10/00b0ff/00b0ff.png) **blue** in the above image
 2. Unplug every connector from the original I/O board, including the power cables and all ribbon cables
 3. Unscrew each screw keeping the I/O board in place, then remove it
 ![I/O board screws to remove](screenshots/original_board_screws.jpg)
