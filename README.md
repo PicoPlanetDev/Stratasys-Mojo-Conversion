@@ -24,11 +24,34 @@ I converted two printers at once for $300, a slight cost savings due to higher q
 | 4010 fan                | <https://www.amazon.com/dp/B0B1N6NSGM/> | $9        | 1            | $9             |
 | **Total**               |                                         |           |              | **$166**       |
 
+You'll also need some assorted M3 screws. I use them standard across all of my designs now and just bought a little box of a few size off of Amazon. Your local hardware store might be better though!
+
 ### 3D Printed Parts
 
 In the `cad/` subdirectory, I have included designs in both Fusion 360 and STEP formats for you to customize and export. STLs and potentially Printables links coming soon!
 
 ## Assembly
+
+### Removing original hardware
+
+I'd suggest using a drill with the clutch limited to about 5 (attached to an appropriately sized socket head) to remove all of the screws. Probably you'll want a magnetic screw dish as well.
+
+1. Remove the metal backplate after unscrewing all of the screws marked in red in the below image
+![Back screws to remove](screenshots/back_screws.jpg)
+2. Remove the two side panels after unscrewing all of the screws marked in blue in the above image
+3. Unplug every connector from the original I/O board, including the power cables and all ribbon cables
+4. Unscrew each screw keeping the I/O board in place, then remove it
+![I/O board screws to remove](screenshots/original_board_screws.jpg)
+5. *Carefully* bend the metal tabs previously holding the I/o board in place out of the way. Ideally all should be in a flush position, save for the small bump where they are attached.
+6. Unscrew and remove both filament buckets. There's four obvious screws on the top, but also one hidden one that I had to use a screwdriver plus shaft extension on:
+![Filament bucket screws to remove](screenshots/filament_bucket_screws.jpg)
+7. Remove the original hotend carrier. This takes some work, and many screws that I don't (yet) have documentation photos for. This is a general guide and it took at least an hour of messing with it the first time I did it.
+   1. First, try unscrewing the PCB on the back
+   2. Remove the belts from their tensioning system and unscrew the back from its slider
+   3. Remove the clip holding the front on, and I think you can take out the entire assembly
+![Hotend carrier](screenshots/original_hotend_carrier.jpg)
+
+### Installing new hardware
 
 In lieu of a full assembly guide (right now), I'll just add some notes.
 
@@ -39,6 +62,11 @@ In lieu of a full assembly guide (right now), I'll just add some notes.
 - When viewing the printer **from the back**, the left motor should be plugged into the **X** connector and the right motor into the **Y** connector
 - You'll need to drill some ~1" holes through the side panels and filament buckets to accomodate a dowel rod for the filament spool
   - Alternatively, for a no-damage installation, print first one of the filament spool holder designs that uses bearings and rollers to support the filament and allow it to spin freely
+- Your Y axis endstop should be on the right side when viewed **from the front** or left side when viewed **from the back**, a couple of inches towards the back away from the front block. You can identify the right position by pushing the Y axis all the way forward, then placing the endstop in a position so it is well depressed.
+  - Depending on your printer, you may be able to screw down one or both of the endstop's mounting holes. I used a 1/8" drill bit and, after marking the position, drilled through the metal with a shop vac for cleanup only
+- All endstops need some insulation on the bottom to prevent shorts. Either heatshrink the whole thing, which would hide the LED :(, or, as I did, liberally apply hot glue to the bottom
+  - Then, for all of the endstops, use more hot glue to affix in place as necessary
+- The Z axis endstop now has a custom mount consisting of a U-shaped bracket that slides over the Z axis block and a separate plate that the endstop mounts to and slides up and down on to adjust the zero offset. The U-shaped bracket probably should be glued down once everything's all set
 
 ## Firmware
 
