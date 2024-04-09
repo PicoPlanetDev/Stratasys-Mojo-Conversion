@@ -115,7 +115,7 @@ Or, if you prefer Cura, as I do for my other machines, the configuration should 
 8. Load the `Mojo Logo.png` file in this repository as the bed texture.
 9. Load the `Accurate Mojo Build Plate.stl` file in this repository as the bed model.
 
-## Instructions
+## Usage Instructions
 
 I created a guide with instructions for a novice user to prepare a model for printing on one of these converted machines.
 That document is available here: [Stratasys Mojo Instructions](https://docs.google.com/document/d/1dcEKFhcxA-QaMBZmRmVCBlgQjbNByx9ydnzFRXKonwo/edit?usp=sharing)
