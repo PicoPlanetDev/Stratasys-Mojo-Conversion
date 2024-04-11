@@ -81,22 +81,22 @@ As this was my first time dealing with a 32-bit control board, the process for u
 1. Clone or download [makerbase-mks/MKS-EAGLE](https://github.com/makerbase-mks/MKS-EAGLE)
 2. Clone or download this repository (for easy access to the Marlin configuration files)
 3. Download and extract the appropriate version of Marlin from [this page](https://marlinfw.org/meta/download/)
-4. Copy the configuration files from the Marlin folder in this repository, and paste them in the Marlin subfolder that you extracted. You should see in the same directory the folders `lib` and `src` in addition to the file `Marlin.ino` if you're in the right place.
+4. Copy the configuration files from the appropriate subfolder of the `firmware` folder in this repository, and paste them in the Marlin subfolder that you extracted. You should see in the same directory the folders `lib` and `src` in addition to the file `Marlin.ino` if you're in the right place.
 5. Install [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) using the download link for your platform
-4. Set up Auto Build Marlin according to [these instructions](https://marlinfw.org/docs/basics/auto_build_marlin.html)
-5. Customize the example configuration
-6. Build using the Build button in the Auto Build Marlin window
-7. Find your `mks_eagle.bin` output file. It should be located in `../.pio' folder (one level outside of the Marlin folder)
-8. Copy `mks_eagle.bin` to the `DFU-upload` folder downloaded from the MKS-EAGLE repository. Overwrite the `mks_eagle.bin` that's already there.
-9.  Ensure that your control board is entirely unpowered, then move the board's power jumper (near the USB Type B port and microSD slot) to USB power (on)
-10. Press and hold the `BOOT0` button on the board, then plug it in to your computer using the included cable. Once it's plugged in, release the button.
-11. Download and run the latest version of [Zadig](https://zadig.akeo.ie/), which will help install necessary USB drivers.
-12. Once Zadig is running, click `Options` then `List All Devices` then select from the top dropdown a device like `STM Bootloader`
-13. Set the driver in the right-side combobox to WinUSB, and then click `Replace Driver`. This process can surprisingly take a few minutes to complete.
+6. Set up Auto Build Marlin according to [these instructions](https://marlinfw.org/docs/basics/auto_build_marlin.html)
+7. Customize the example configuration
+8. Build using the Build button in the Auto Build Marlin window
+9. Find your `mks_eagle.bin` output file. It should be located in `../.pio' folder (one level outside of the Marlin folder)
+10. Copy `mks_eagle.bin` to the `DFU-upload` folder downloaded from the MKS-EAGLE repository. Overwrite the `mks_eagle.bin` that's already there.
+11.  Ensure that your control board is entirely unpowered, then move the board's power jumper (near the USB Type B port and microSD slot) to USB power (on)
+12. Press and hold the `BOOT0` button on the board, then plug it in to your computer using the included cable. Once it's plugged in, release the button.
+13. Download and run the latest version of [Zadig](https://zadig.akeo.ie/), which will help install necessary USB drivers.
+14. Once Zadig is running, click `Options` then `List All Devices` then select from the top dropdown a device like `STM Bootloader`
+15. Set the driver in the right-side combobox to WinUSB, and then click `Replace Driver`. This process can surprisingly take a few minutes to complete.
 ![Screenshot of Zadig window for driver replacement](screenshots/replace_driver.png)
-14. In the `MKS-EAGLE/DFU-upload` folder, run `DFU-Upload-firmware.bat`
-15. Once flashing is complete, unplug the board and change the power jumper back to off (so no USB power)
-16. Turn on your power supply and test the firmware!
+16. In the `MKS-EAGLE/DFU-upload` folder, run `DFU-Upload-firmware.bat`
+17. Once flashing is complete, unplug the board and change the power jumper back to off (so no USB power)
+18. Turn on your power supply and test the firmware!
 
 ## Slicer
 
@@ -112,8 +112,8 @@ Or, if you prefer Cura, as I do for my other machines, the configuration should 
 6. Ensure that Expert mode is selected by pressing the button in the top right.
 7. Navigate to *General* > *Bed Shape*.
 ![Bed Shape dialog](screenshots/bed_shape.png)
-8. Load the `Mojo Logo.png` file in this repository as the bed texture.
-9. Load the `Accurate Mojo Build Plate.stl` file in this repository as the bed model.
+1. Load the `Mojo Logo.png` file from the `PrusaSlicer/buildplate` folder you copied as the bed texture.
+2. Load the `Accurate Mojo Build Plate.stl` file `PrusaSlicer/buildplate` folder you copied as the bed model.
 
 ## Usage Instructions
 
@@ -124,9 +124,11 @@ That document is available here: [Stratasys Mojo Instructions](https://docs.goog
 
 - [x] Update to 2.1-bugfix
 - [x] Implement M16 in print profile to ensure that the right profile (dual vs single extruder) was used
-- [ ] Figure out feasibility of ATX power supply enable / disable and standby power
+- [ ] ~~Figure out feasibility of ATX power supply enable / disable and standby power~~
 - [ ] Consider MPC temperature instead of PID
 - [ ] Consider S-Curve acceleration
 - [ ] Consider nozzle clean
 - [ ] Enable linear advance
-- [ ] Consider sensorless homing
+- [ ] ~~Consider sensorless homing~~
+- [ ] Create X axis endstop mount
+- [ ] Create both extruder mounts
