@@ -41,6 +41,20 @@ In the `cad/` subdirectory, I have included designs in both Fusion 360 and STEP 
 Note that the Z Endstop Mount design is currently **not** suitable for the conversion. It doesn't allow the bed to move up enough to reach the hotend. Future revision will correct this, however,
 I just use hot glue and software offsets in the meantime.
 
+### Laser Cut Parts
+
+If you have access to a laser cutter, it can be really useful for quickly making the following parts out of acrylic:
+
+- LCD frontplate
+- LCD backplate
+- Control board backplate
+- Control board standoffs
+- Control board fan mount
+
+However, a laser cutter is not required and these could easily be made manually with careful marking, a drill press, and a jigsaw, or 3D printed if you're willing to run a relatively long print.
+
+These design files are not yet included.
+
 ## Assembly
 
 ### Removing original hardware
