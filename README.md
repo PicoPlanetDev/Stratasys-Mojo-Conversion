@@ -30,6 +30,17 @@ You'll also need some assorted M3 screws. I use them standard across all of my d
 
 In the `cad/` subdirectory, I have included designs in both Fusion 360 and STEP formats for you to customize and export. STLs and potentially Printables links coming soon!
 
+|       **Part**       | **Quantity** |
+|:--------------------:|:------------:|
+| Chimera Mount        | 1            |
+| Left Extruder Mount  | 1            |
+| Right Extruder Mount | 1            |
+| Stepper Mount        | 3            |
+| ~~Z Endstop Mount~~  | ~~1~~        |
+
+Note that the Z Endstop Mount design is currently **not** suitable for the conversion. It doesn't allow the bed to move up enough to reach the hotend. Future revision will correct this, however,
+I just use hot glue and software offsets in the meantime.
+
 ## Assembly
 
 ### Removing original hardware
@@ -88,7 +99,7 @@ As this was my first time dealing with a 32-bit control board, the process for u
 8. Build using the Build button in the Auto Build Marlin window
 9. Find your `mks_eagle.bin` output file. It should be located in `../.pio' folder (one level outside of the Marlin folder)
 10. Copy `mks_eagle.bin` to the `DFU-upload` folder downloaded from the MKS-EAGLE repository. Overwrite the `mks_eagle.bin` that's already there.
-11.  Ensure that your control board is entirely unpowered, then move the board's power jumper (near the USB Type B port and microSD slot) to USB power (on)
+11. Ensure that your control board is entirely unpowered, then move the board's power jumper (near the USB Type B port and microSD slot) to USB power (on)
 12. Press and hold the `BOOT0` button on the board, then plug it in to your computer using the included cable. Once it's plugged in, release the button.
 13. Download and run the latest version of [Zadig](https://zadig.akeo.ie/), which will help install necessary USB drivers.
 14. Once Zadig is running, click `Options` then `List All Devices` then select from the top dropdown a device like `STM Bootloader`
