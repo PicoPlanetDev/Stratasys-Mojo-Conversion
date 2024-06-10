@@ -170,4 +170,4 @@ That document is available here: [Stratasys Mojo Instructions](https://docs.goog
 - [ ] Enable linear advance
 - [ ] ~~Consider sensorless homing~~
 - [ ] Create X axis endstop mount
-- [ ] Create both extruder mounts
+- [x] Create both extruder mounts
