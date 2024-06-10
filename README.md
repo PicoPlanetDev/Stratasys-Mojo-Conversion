@@ -106,6 +106,7 @@ In lieu of a full assembly guide (right now), I'll just add some notes.
 - All endstops need some insulation on the bottom to prevent shorts. Either heatshrink the whole thing, which would hide the LED :(, or, as I did, liberally apply hot glue to the bottom
   - Then, for all of the endstops, use more hot glue to affix in place as necessary
 - The Z axis endstop now has a custom mount consisting of a U-shaped bracket that slides over the Z axis block and a separate plate that the endstop mounts to and slides up and down on to adjust the zero offset. The U-shaped bracket probably should be glued down once everything's all set
+- Don't forget that ATX computer power supplies require their PS_On pin (#6 on a 24-pin connector) to be jumped to ground to activate them. As I have not implemented power supply control, please use a short piece of wire to connect PS_on (also denoted by the green wire) to any black ground wire.
 
 ## Firmware
 
