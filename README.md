@@ -41,6 +41,20 @@ In the `cad/` subdirectory, I have included designs in both Fusion 360 and STEP 
 Note that the Z Endstop Mount design is currently **not** suitable for the conversion. It doesn't allow the bed to move up enough to reach the hotend. Future revision will correct this, however,
 I just use hot glue and software offsets in the meantime.
 
+#### Buildplate
+
+[@mebillica](https://github.com/mebillica) has improved the accuracy of my build plate design used in the PrusaSlicer model preview to the point that it can be printed and used in the abscence
+of OEM buildplates, an increasingly prevalent issue with Stratasys Mojo machines after their discontinuation.
+
+[Here's a link](https://www.thingiverse.com/thing:6648382) to his model on Thingiverse, which also includes the Fusion source if you need to make further modifications. The Fusion design and STL file
+are also mirrored in this repo, in the `cad/Fusion/Build Plate` and `PrusaSlicer/buildplate` directories, respectively. If you'd prefer the Printables download, that is [available as well](https://www.printables.com/model/901716-stratasys-mojo-build-plate).
+
+Stratasys OEM buildplates are made of some some sort of ABS plastic so that their ABS filament fuses to them. This makes them non-reuseable unless you cover first with transfer tape (and a glue stick).
+However, if you're looking to print PLA using a machine retrofitted according to this guide, you may have success printing these plates out of other materials.
+
+PrusaSlicer should now show this new buildplate design in the Plater tab when setting up your prints, giving you an even better idea of where your model lands relative to the 5" grid as well
+as locking mechanism.
+
 ### Laser Cut Parts
 
 If you have access to a laser cutter, it can be really useful for quickly making the following parts out of acrylic:
